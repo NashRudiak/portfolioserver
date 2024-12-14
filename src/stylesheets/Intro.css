@@ -1,0 +1,74 @@
+@import "./App.css";
+
+div.intro {
+    width: 100%;
+    height: 70vh;
+    /*
+     * Credit to DenFreezeWolf for the background image
+     * https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fdenfreezewolf%2Fart%2FSpace-966520541&psig=AOvVaw35CQB2vZcq8zt6amb5bCSB&ust=1734127165835000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDxw5-do4oDFQAAAAAdAAAAABAE
+     */
+    background-image: url("../media/backgroundintro.png");
+    animation: 100s linear infinite movebackground;
+    grid-template-columns: [gridstart] 5% [leftedge] 5% 30% 3.75% [captionstart] 6% [namestart] 4% 13.75% 13.75% 10% [nameend] 3.75% [rightedge] 5% [gridend];
+    grid-template-rows: [startedge] 25% [imagestart] 5% [namebox] 10% 10% [captionbox] 15% 30% [imageend] 10% [finaledge];
+}
+
+@keyframes movebackground {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 50% 10%;
+    }
+
+    50% {
+        background-position: 60% 70%;
+    }
+
+    75% {
+        background-position: 15% 46%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+
+}
+
+/* The text involved with the titles */
+div img.headshot {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    grid-column: 3;
+    grid-row-start: imagestart;
+    grid-row-end: imageend;
+    animation: 1s ease-out 0.5s 1 both fadeIn;
+}
+
+div div.titlebox {
+    grid-column-start: namestart;
+    grid-column-end: nameend;
+    grid-row-start: namebox;
+    grid-row-end: captionbox;
+    background-color: var(--backEmph);
+    text-shadow: 2px 2px 2px #a5a5a5;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+    font-size: calc(10px + 4vmin);
+    animation: 1.5s ease-out 1s 1 both slideinright;
+}
+
+div div.captionbox {
+    grid-column-start: captionstart;
+    grid-column-end: captionend;
+    grid-row: captionbox;
+    background-color: #e6e6e6;
+    text-shadow: 2px 2px 2px #a5a5a5;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+    font-size: calc(12px + 2vmin);
+    animation: 1s ease-out 0.5s 1 both slideinright;
+}

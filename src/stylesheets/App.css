@@ -1,0 +1,163 @@
+/* Fundamental building blocks of theme */
+
+:root {
+    --backEmph: #e6e6e6;
+    --backPress: #c2c2c2;
+    --backReg: #d7d7d7;
+    --textCol: #383838;
+    --pageHigh: #686868;
+}
+
+.hidden {
+    opacity: 0%;
+    width: 1px;
+    height: 1px;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+div.section {
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    gap: 0px 0px;
+    grid-template-columns: [gridstart] 5% [leftedge] auto [rightedge] 5% [gridend];
+    grid-template-rows: [startedge] 100% [finaledge];
+    overflow: hidden;
+}
+
+div.testElement {
+    border: 2px solid green;
+    background-color: #e6e6e627;
+}
+
+div.textbox {
+    display: flex;
+    border: 2px solid var(--backEmph);
+    color: var(--textCol);
+    font-size: calc(10px + 1vmin);
+    background-color: var(--backEmph);
+    align-items: center;
+    justify-content: left;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+/* Covers the bar on the right hand side.
+ * = = = = |
+ * = = = = |
+ * = = = = |
+ * the equals are the space */
+
+div.fillbar {
+    background-color: var(--backReg);
+    z-index: 1000;
+    border: 2vw solid var(--backReg);
+    grid-row-start: startedge;
+    grid-row-end: finalegde;
+}
+
+div.fillbar#left {
+    border-right-color: var(--backEmph);
+    grid-column: leftedge;
+}
+
+div.fillbar#right {
+    border-left-color: var(--backEmph);
+    grid-column: rightedge;
+}
+
+/* Covers the actual space where content is shown.
+ * = = = = |
+ * = = = = |
+ * = = = = |
+ * the equals are the space */
+div.playspace {
+    display: grid;
+}
+
+div.playspace#left {
+    grid-column-start: gridstart;
+    grid-column-end: rightedge;
+}
+
+div.playspace#right {
+    grid-column-start: gridend;
+    grid-column-end: leftedge;
+}
+
+
+/* Covers the section that separates boxes */
+div.fillbox {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--backReg);
+}
+
+/* Useful animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideinright {
+    0% {
+        transform: translateX(60vw);
+    }
+  
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+/*
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
