@@ -16,7 +16,7 @@ function Navigation() {
     return (
         <div class="Navigation">
             <header>
-                <h1>Nash Rudiak Portfolio</h1>
+                <h1 class="titleFont">Nash Rudiak Portfolio</h1>
                 <nav>
                     <ul>
                         <li>{Linker("/", "Home")}</li>

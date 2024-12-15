@@ -13,8 +13,8 @@ function Intro() {
             <div class="fillbar" id="right" />
             <div class="intro playspace" id="left" ref={ref}>
                 <img src={photo} class={inView ? "headshot" : "hidden"} alt="Nash Rudiak" />
-                <div class={inView ? "textbox titlebox" : "hidden" }>Nash A. Rudiak</div>
-                <div class={inView ? "textbox captionbox" : "hidden" }>Junior Computer Scientist</div>
+                <div class={inView ? "textbox titlebox titleFont" : "hidden" }>Nash A. Rudiak</div>
+                <div class={inView ? "textbox captionbox titleFont" : "hidden" }>Junior Computer Scientist</div>
             </div>
         </div>
     );
