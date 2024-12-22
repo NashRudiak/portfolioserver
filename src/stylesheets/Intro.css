@@ -3,10 +3,6 @@
 div.intro {
     width: 100%;
     height: 70vh;
-    /*
-     * Credit to DenFreezeWolf for the background image
-     * https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fdenfreezewolf%2Fart%2FSpace-966520541&psig=AOvVaw35CQB2vZcq8zt6amb5bCSB&ust=1734127165835000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDxw5-do4oDFQAAAAAdAAAAABAE
-     */
     background-image: url("../media/backgroundintro.png");
     animation: 100s linear infinite movebackground;
     grid-template-columns: [gridstart] 5% [leftedge] 5% 30% 3.75% [captionstart] 6% [namestart] 4% 13.75% 13.75% 10% [nameend] 3.75% [rightedge] 5% [gridend];

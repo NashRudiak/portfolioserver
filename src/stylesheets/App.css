@@ -1,5 +1,6 @@
 /* Fundamental building blocks of theme */
 
+/* Some nice colour variables I plan to use */
 :root {
     --backEmph: #e6e6e6;
     --backPress: #c2c2c2;
@@ -8,6 +9,8 @@
     --pageHigh: #686868;
 }
 
+/* Any elements unseen should be made invisible before being seen
+ * 1px by 1px as 0px would refuse to render */
 .hidden {
     opacity: 0%;
     width: 1px;
@@ -29,6 +32,17 @@ div.section {
     overflow: hidden;
 }
 
+div.sectionSpan {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    gap: 0px 0px;
+    grid-template-columns: [gridstart] 5% [leftedge] auto [rightedge] 5% [gridend];
+    grid-template-rows: [startedge] 100% [finaledge];
+    overflow: hidden;
+}
+
+/* Small test element for grids */
 div.testElement {
     border: 2px solid green;
     background-color: #e6e6e627;
@@ -68,7 +82,7 @@ div.fillbar {
 
 div.fillbar#left {
     border-right-color: var(--backEmph);
-    grid-column: leftedge;
+    grid-column: gridstart;
 }
 
 div.fillbar#right {
@@ -91,16 +105,16 @@ div.playspace#left {
 }
 
 div.playspace#right {
-    grid-column-start: gridend;
-    grid-column-end: leftedge;
+    grid-column-start: leftedge;
+    grid-column-end: gridend;
 }
 
 
 /* Covers the section that separates boxes */
 div.fillbox {
-  width: 100vw;
-  height: 10vh;
-  background-color: var(--backReg);
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--backReg);
 }
 
 /* Useful animations */

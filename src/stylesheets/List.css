@@ -1,0 +1,53 @@
+@import "./App.css";
+
+ul.list {
+    list-style: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * 5
+ * 0.5
+ * 80
+ * 0.5
+ * 5
+ */
+ul.list li {
+    margin: 5vh 5vw 5vh 5vw;
+    width: auto;
+    padding: 2vw;
+    background-color: var(--backReg);
+    border: 1vw solid var(--backEmph);
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+ul.list li img {
+    width: 200px;
+    height: 200px;
+}
+
+ul.list li div.content {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: calc(20px + 2vw);
+    width: 100%;
+}
+
+ul.list li div.content p {
+    background-color: green;
+    width: 100%;
+}
+
+ul.list li div.content a {
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    margin-top: 1vh;
+}

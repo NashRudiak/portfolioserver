@@ -20,7 +20,7 @@ function Navigation() {
                 <nav>
                     <ul>
                         <li>{Linker("/", "Home")}</li>
-                        <li>{Linker("/home", "test")}</li>
+                        <li>{Linker("/sources", "Sources")}</li>
                     </ul>
                 </nav>
             </header>
