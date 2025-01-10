@@ -15,7 +15,7 @@ ul.list {
  * 5
  */
 ul.list li {
-    margin: 5vh 5vw 5vh 5vw;
+    margin: 10vh 5vw 5vh 5vw;
     width: auto;
     padding: 2vw;
     background-color: var(--backReg);
@@ -24,30 +24,57 @@ ul.list li {
     display: flex;
     justify-content: flex-start;
     align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1vh 2vw;
+}
+
+/* Usually the format will be:
+ * h2
+ * stuff
+ *
+ * Stuff will encapsulate images, text, links, etc.
+ */
+ul.list li div.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1vh 2vw;
 }
 
 ul.list li img {
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vw;
 }
 
-ul.list li div.content {
-    align-content: center;
+ul.list li div.textcontent {
+    align-content: flex-end;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-left: calc(20px + 2vw);
+    flex-wrap: nowrap;
+    width: auto;
+    gap: 0px;
+}
+
+/* For fonts, I ended up finding out width was better for scaling then height*/
+ul.list li h2  {
     width: 100%;
+    font-size: calc(10px + 2vw);
 }
 
 ul.list li div.content p {
-    background-color: green;
-    width: 100%;
+    width: auto;
+    font-size: calc(5px + 1vw);
+    margin: 0px;
 }
 
 ul.list li div.content a {
-    width: 100%;
+    width: auto;
     text-align: center;
-    background-color: green;
-    margin-top: 1vh;
+    font-size: calc(7px + 1vw);
+    margin: 10px 0px 0px 0px;
 }
