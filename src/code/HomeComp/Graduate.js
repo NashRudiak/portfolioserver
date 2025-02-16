@@ -3,8 +3,8 @@ import {useInView} from "react-intersection-observer";
 
 function Graduate() {
     /* want this to be seen from early on */
-    const [ref, inView] = useInView({ threshold: 0 })
-    const [refdesc, inViewDesc] = useInView({threshold: 0.3})
+    const [ref, inView] = useInView({ threshold: 0 });
+    const [refdesc, inViewDesc] = useInView({threshold: 0.3});
     return (
         <div class="section">
             <div class="fillbar" id="left" />

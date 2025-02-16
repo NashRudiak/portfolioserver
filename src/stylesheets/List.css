@@ -1,5 +1,16 @@
 @import "./App.css";
 
+@keyframes slideinleft {
+    0% {
+        opacity: 0%;
+        transform: translateX(-70vw);
+    }
+  
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
 ul.list {
     list-style: none;
     background-color: black;
@@ -18,6 +29,7 @@ ul.list li {
     margin: 10vh 5vw 5vh 5vw;
     width: auto;
     padding: 2vw;
+    padding-left: 5vw;
     background-color: var(--backReg);
     border: 1vw solid var(--backEmph);
     border-radius: 0.5vw;
@@ -27,6 +39,10 @@ ul.list li {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1vh 2vw;
+}
+
+.slideinleft {
+    animation: 0.5s ease-in 0s 1 both slideinleft;
 }
 
 /* Usually the format will be:
@@ -64,12 +80,27 @@ ul.list li div.textcontent {
 ul.list li h2  {
     width: 100%;
     font-size: calc(10px + 2vw);
+    margin: 1vh;
+    margin-left: 0px;
+    color: var(--textCol);
+}
+
+ul.list li h3 {
+    width: 100%;
+    font-size: calc(6px + 1vw);
+    margin-top: 0px;
+    margin-bottom: 1vh;
+    margin-left: 5vw;
+    color: var(--textCol);
 }
 
 ul.list li div.content p {
     width: auto;
     font-size: calc(5px + 1vw);
     margin: 0px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: var(--textCol);
 }
 
 ul.list li div.content a {
@@ -77,4 +108,5 @@ ul.list li div.content a {
     text-align: center;
     font-size: calc(7px + 1vw);
     margin: 10px 0px 0px 0px;
+    color: var(--textCol);
 }

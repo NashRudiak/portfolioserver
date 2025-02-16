@@ -10,7 +10,8 @@ div.intro {
     width: 100%;
     height: 80vh;
     background-image: url("../media/backgroundintro.png");
-    animation: 200s linear infinite movebackground;
+    background-position: center;
+    /* animation: 200s linear infinite movebackground; */
     grid-template-columns: 10% [imagelocI] 33.75% [captionstartI] 6% [namestartI] 41.5% [nameendI] 8.75% [rightedgeI];
     grid-template-rows: 25% [imagestartI] 5% [namelocI] 20% [captionbox] 15% 30% [imageendI] 10% [finaledgeI];
     /* the 15 30 is for the box and space */
@@ -21,9 +22,18 @@ div.graduate {
     height: 70vh;
     background-image: url("../media/guelphbackground.JPG");
     background-size: 2000px auto;
-    animation: 200s linear infinite backgroundgrad;
+    background-position: center;
+    /* animation: 200s linear infinite backgroundgrad; */
     grid-template-columns: [titleleftG] 50% [descleftG] 10% [titlerightG] 40% [descrightG];
     grid-template-rows: [titletopG] 15% [titlebottomG] 45% [desctopG] 40% [descbottomG];
+}
+
+div.projectoverview {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    grid-template-columns: [linkboxleftP] 45% [linkboxrightP] 10% [listboxleftP] 45% [listboxrightP];
+    grid-template-rows: 10% [boxtopP] 80% [boxbottomP] 10%;
 }
 
 @keyframes movebackground {
@@ -134,4 +144,59 @@ div div.graddesc {
     grid-row-end: descbottomG;
     font-size: calc(5px + 1vw);
     box-shadow: 2px 10px 40px var(--textShadow);
+}
+
+/* --------------------------------
+ * PROJECT
+ * --------------------------------
+ */
+
+div div.suggestbox {
+    grid-column-start: linkboxleftP;
+    grid-column-end: linkboxrightP;
+    grid-row-start: boxtopP;
+    grid-row-end: boxbottomP;
+    background-color: var(--backEmph);
+    box-shadow: -5px 5px 40px var(--textCol);
+    border-radius: 0px 40px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.emphtext {
+    font-size: calc(10px + 4vmin);
+    margin: 2vh;
+}
+
+div div.projectbox {
+    grid-column-start: listboxleftP;
+    grid-column-end: listboxrightP;
+    grid-row-start: boxtopP;
+    grid-row-end: boxbottomP;
+    background-color: green;
+    padding: 0px;
+}
+
+div div.projectbox ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: 0px;
+    gap: 5vh;
+}
+
+div div.projectbox ul li {
+    background-color: var(--backEmph);
+    width: 100%;
+    height: 12vh;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 5px 2px 20px var(--textCol);
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }

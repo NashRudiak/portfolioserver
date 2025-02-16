@@ -14,8 +14,8 @@
  * 1px by 1px as 0px would refuse to render */
 .hidden {
     opacity: 0%;
-    width: 1px;
-    height: 1px;
+    /* width: 1px;
+    height: 1px; */
 }
 
 div {
@@ -171,6 +171,29 @@ div.fillbox {
     100% {
         transform: translateX(0vw);
     }
+}
+
+button {
+    margin: 2vh;
+    background-color: var(--textCol);
+    border: 2px solid var(--textCol);
+    color: var(--backEmph);
+    padding: 2vh;
+    border-radius: 3vh;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 10px var(--textCol);
+}
+
+button:active {
+    margin: 2vh;
+    background-color: var(--backPress);
+    color: var(--backEmph);
+    border: 2px solid var(--textCol);
+    box-shadow: none;
 }
 
 /* Provides a fade in that does a little bounce */
