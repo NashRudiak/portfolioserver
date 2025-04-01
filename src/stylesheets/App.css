@@ -144,22 +144,22 @@ div.fillbox {
 @keyframes bounceIn {
     0% {
         opacity: 0%;
-        transform: translateY(30px);
+        transform: translateX(-5px) translateY(30px);
     }
 
     80% {
         opacity: 100%;
-        transform: translateY(-5px);
+        transform: translateX(3px) translateY(-5px);
     }
 
     90% {
         opacity: 100%;
-        transform: translateY(-5px);
+        transform: translateX(2px) translateY(-10px);
     }
 
     100% {
         opacity: 100%;
-        transform: translateY(0px);
+        transform: translateX(0px) translateY(0px);
     }
 }
 
@@ -198,7 +198,17 @@ button:active {
 
 /* Provides a fade in that does a little bounce */
 .textanim {
-    animation: 0.5s ease-in 0s 1 both bounceIn;
+    animation: 0.3s ease-in 0s 1 both bounceIn;
+}
+
+/* Background for other pages */
+
+div.projectsBackground {
+    background: fixed center url("../media/pexels-photo-276452.webp")
+}
+
+div.sourcesBackground {
+    background: fixed center url("../media/Provincial_Archives.jpg")
 }
 
 /*

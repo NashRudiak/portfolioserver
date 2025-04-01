@@ -1,12 +1,11 @@
 import "../stylesheets/List.css";
-import "../stylesheets/App.css";
 import ListEntry from "./ListEntry";
 
 function Projects() {
     return (
         <div class="sectionSpan">
             <div class="fillbar" id="left" />
-            <div class="playspace" id="right">
+            <div class="playspace projectsBackground" id="right">
                 <ul class="list">
                     {ListEntry(
                         "Java Compiler",

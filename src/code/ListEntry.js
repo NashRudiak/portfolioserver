@@ -17,7 +17,7 @@ function ListEntry(title, caption = null, text = "", link = null, img = null, im
     }
     let linkComp = ""
     if (link != null) {
-        linkComp = <a href={link}>{link}</a>
+        linkComp = <a href={link} class={inView ? "listlinkanim" : "hidden"}>{link}</a>
     }
 
     return(
@@ -26,7 +26,7 @@ function ListEntry(title, caption = null, text = "", link = null, img = null, im
             {capComp}
             <div class="content">
                 {imgComp}
-                <div class="textcontent">
+                <div class={inView ? "textcontent" : "hidden"}>
                     {text}
                     {linkComp}
                 </div>

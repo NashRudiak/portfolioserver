@@ -21,21 +21,21 @@ function Explore() {
                         <div ref={proj1}>
                             <li class={inView1 ? "slidein" : "hidden"}>
                                 <div class={inView1 ? "textlist" : "hidden"}>
-                                    p
+                                    A custom compiler which translates C- code into a file which can be used by turing machine simulators.
                                 </div>
                             </li>
                         </div>
                         <div ref={proj2}>
                             <li class={inView2 ? "slidein" : "hidden"}>
                                 <div class={inView2 ? "textlist" : "hidden"}>
-                                    proj2hehe
+                                    Two programs designed to use Azure and Google Cloud Platform to launch and create custom Virtual Machines
                                 </div>
                             </li>
                         </div>
                         <div ref={proj3}>
                             <li class={inView3 ? "slidein" : "hidden"}>
                                 <div class={inView3 ? "textlist" : "hidden"}>
-                                    proj3
+                                    This very website designed from scratch using the React framework, with personally designed CSS stylesheet from scratch.
                                 </div>
                             </li>
                         </div>

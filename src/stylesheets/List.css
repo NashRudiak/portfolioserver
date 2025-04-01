@@ -13,7 +13,6 @@
 
 ul.list {
     list-style: none;
-    background-color: black;
     margin: 0;
     padding: 0;
 }
@@ -26,7 +25,7 @@ ul.list {
  * 5
  */
 ul.list li {
-    margin: 10vh 5vw 5vh 5vw;
+    margin: 10vh -1vw 5vh 5vw;
     width: auto;
     padding: 2vw;
     padding-left: 5vw;
@@ -59,11 +58,12 @@ ul.list li div.content {
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 1vh 2vw;
+    width: 90%;
 }
 
 ul.list li img {
-    width: 20vw;
-    height: 20vw;
+    height: auto;
+    width: 25vw;
 }
 
 ul.list li div.textcontent {
@@ -74,6 +74,8 @@ ul.list li div.textcontent {
     flex-wrap: nowrap;
     width: auto;
     gap: 0px;
+    animation: 0.3s ease-in 0.5s 1 both bounceIn;
+    min-width: 0;
 }
 
 /* For fonts, I ended up finding out width was better for scaling then height*/
@@ -95,18 +97,27 @@ ul.list li h3 {
 }
 
 ul.list li div.content p {
-    width: auto;
+    text-wrap: pretty;
     font-size: calc(5px + 1vw);
     margin: 0px;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    padding-right: 1vw;
     color: var(--textCol);
+    flex-shrink: 1;
+    min-width: 0;
+    flex-basis: 0;
 }
 
 ul.list li div.content a {
-    width: auto;
     text-align: center;
     font-size: calc(7px + 1vw);
     margin: 10px 0px 0px 0px;
-    color: var(--textCol);
+    padding-right: 1vw;
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+a.listlinkanim {
+    animation: 0.3s ease-in 0.8s 1 both bounceIn;
 }

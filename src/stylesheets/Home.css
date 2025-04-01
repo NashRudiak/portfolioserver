@@ -88,14 +88,14 @@ div.projectoverview {
 
 /* The text involved with the titles */
 div img.headshot {
-    max-width: 100%;
     max-height: 100%;
-    height: auto;
+    height: 100%;
     width: auto;
     grid-column: imagelocI;
     grid-row-start: imagestartI;
     grid-row-end: imageendI;
     animation: 1s ease-out 0.5s 1 both fadeIn;
+    border: 2vmin solid var(--backEmph);
 }
 
 div div.introtitle {

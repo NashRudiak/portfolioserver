@@ -1,4 +1,4 @@
-import photo from "../../media/Testphoto.jpeg";
+import photo from "../../media/personalshot.jpeg";
 import "../../stylesheets/Home.css";
 import {useInView} from "react-intersection-observer";
 
