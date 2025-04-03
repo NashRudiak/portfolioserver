@@ -1,0 +1,22 @@
+@import "./App.css";
+
+footer {
+    background-color: var(--backPress);
+    color: var(--pageHigh);
+    margin: 0px;
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20vw;
+}
+
+ul.linkList {
+    list-style-type: none;
+}
+
+ul.linkList li {
+    display: inline-block;
+    overflow: auto;
+    margin: 0px 0.5vw 0px 0.5vw;
+}
