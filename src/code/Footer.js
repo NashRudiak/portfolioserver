@@ -1,6 +1,6 @@
 import '../stylesheets/Footer.css';
 import { IconContext } from "react-icons";
-import { AiFillLinkedin, AiFillGithub, AiFillPhone } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillPhone, AiFillMail } from "react-icons/ai";
 
 /* Unfortunately I have to import the colors from App.css here
  * as there does not seem to be a way to use them from the style sheet */
@@ -17,16 +17,21 @@ function Footer() {
     return(
         <footer>
             <IconContext.Provider value={{ color: Themes.pageHigh, size: "2em"}}>
-                <div class="contactSpot">
-                    <h1 class="test">Contact</h1>
-                    <ul class="contactList">
-                        <li>rudiaknash@gmail.com</li>
-                        <li>
-                            <IconContext.Provider value={{size: "1em"}}><AiFillPhone /></IconContext.Provider> (905) 320-0503
-                        </li>
-                    </ul>
+                <div class="footerTitleWrapper footerSection">
+                    <h1 class="titlefont">Nash Rudiak</h1>
                 </div>
-                <div class="links">
+                <div class="contactSpot footerSection">
+                    <IconContext.Provider value={{size: "1em"}}>
+                        <h1 class="contactHeader titlefont">Contact</h1>
+                        <ul class="contactList">
+                            <li><AiFillMail /> rudiaknash@gmail.com</li>
+                            <li>
+                                <AiFillPhone /> (905) 320-0503
+                            </li>
+                        </ul>
+                    </IconContext.Provider>
+                </div>
+                <div class="footerSection linksWrap">
                     <ul class="linkList">
                         <li>
                             <a href="https://www.linkedin.com/in/nash-rudiak-46ab11346"><AiFillLinkedin /></a>
