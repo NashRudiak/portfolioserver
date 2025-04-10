@@ -87,7 +87,7 @@ function Sources() {
                         "Background image of code from Pexels"
                     )}
                     {ListEntry(
-                        "a",
+                        "Chalk Board Background",
                         null,
                         <>
                         <p>

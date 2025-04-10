@@ -21,8 +21,8 @@ function ListEntry(title, caption = null, text = "", link = null, img = null, im
     }
 
     return(
-        <li ref={ref} class={inView ? "slideinleft" : "hidden"}>
-            <h2>{title}</h2>
+        <li ref={ref} class={inView ? "slideinleft listEntry" : "listEntry hidden"}>
+            <h2 class="titlefont">{title}</h2>
             {capComp}
             <div class="content">
                 {imgComp}

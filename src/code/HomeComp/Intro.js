@@ -5,7 +5,7 @@ import {useInView} from "react-intersection-observer";
 /* Website section for name and image of me */
 
 function Intro() {
-    const [ref, inView] = useInView({ threshold: 0.1 });
+    const [ref, inView] = useInView({ threshold: 0 });
     return (
         <div class="section">
             <div class="fillbar" id="right" />

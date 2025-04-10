@@ -84,7 +84,7 @@ div.textbox {
 
 div.fillbar {
     background-color: var(--backReg);
-    z-index: 1000;
+    z-index: 99;
     border: 2vw solid var(--backReg);
     grid-row-start: startedge;
     grid-row-end: finalegde;
@@ -204,11 +204,14 @@ button:active {
 /* Background for other pages */
 
 div.projectsBackground {
-    background: fixed center url("../media/pexels-photo-276452.webp")
+    background: fixed center url("../media/pexels-photo-276452.webp");
+    background-repeat: repeat-x;
+    margin-bottom: -1px;
 }
 
 div.sourcesBackground {
-    background: fixed center url("../media/Provincial_Archives.jpg")
+    background: fixed center url("../media/Provincial_Archives.jpg");
+    background-repeat: repeat-x;
 }
 
 /*

@@ -3,13 +3,14 @@ import ListEntry from "./ListEntry";
 
 function Projects() {
     return (
-        <div class="sectionSpan">
+        <>
+        <div class="sectionSpan projectsBackground">
             <div class="fillbar" id="left" />
-            <div class="playspace projectsBackground" id="right">
+            <div class="playspace" id="right">
                 <ul class="list">
                     {ListEntry(
                         "Java Compiler",
-                        "* Will require permission to view code",
+                        <ul><li>Will require permission to view code</li></ul>,
                         <>
                         <p>
                             A custom compiler for a programming language called C minus, which is an offshoot of C with
@@ -42,7 +43,7 @@ function Projects() {
                     )}
                     {ListEntry(
                         "Buffer and Env exploit demo",
-                        "* Will require permission to view code, adaptation of provided code",
+                        <ul><li>Will require permission to view code, adaptation of provided code</li></ul>,
                         <>
                         <p>
                             Showcases 2 separate known exploits that can allow arbitrary code to be run. The demo consisted of 
@@ -66,7 +67,7 @@ function Projects() {
                     )}
                     {ListEntry(
                         "Adapt rotating cube with OpenCL",
-                        "* Will require permission to view code, adaptation of provided code",
+                        <ul><li>Will require permission to view code, adaptation of provided code</li></ul>,
                         <>
                         <p>
                             An application of OpenCL which adapts a function originally running serial to utilize multithreading. 
@@ -85,7 +86,7 @@ function Projects() {
                     )}
                     {ListEntry(
                         "AWS CMD Bucket interface",
-                        "* Will require permission to view code",
+                        <ul><li>Will require permission to view code</li></ul>,
                         <>
                         <p>
                             Amazon Web Services have a unique cloud storage system similar to that of Linux, where each storage 
@@ -102,7 +103,7 @@ function Projects() {
                     )}
                     {ListEntry(
                         "Azure and GCloud VM CMD Interface",
-                        "* Will require permission to view code",
+                        <ul><li>Will require permission to view code</li></ul>,
                         <>
                         <p>
                             Two separate programs which both seek to utilize the virtual computing capabilities of cloud 
@@ -126,7 +127,7 @@ function Projects() {
                     )}
                     {ListEntry(
                         "Image Toolkit Library",
-                        "* Will require permission to view code",
+                        <ul><li>Will require permission to view code</li></ul>,
                         <>
                         <p>
                             A library dedicated to performing image operations, each fully customizable to produce different 
@@ -146,6 +147,7 @@ function Projects() {
                 </ul>
             </div>
         </div>
+        </>
     );
 }
 
