@@ -103,6 +103,21 @@ function Sources() {
                         provarchive,
                         "Provincial Archives of Hämeenlinna by Htm"
                     )}
+                    {(
+                        "",
+                        null,
+                        <>
+                        <p>
+                            To actually host the react app on the cloud server, I ended up needing to look up how
+                            as I couldn't find a good file path for the React website to host anything.
+                        </p>
+                        <p>
+                            Fortunately, J Karelins made an excellent guide on hosing a React app on a website. It
+                            goes through not only the actual process of hosting the app but also getting a SSL certificate
+                        </p>
+                        </>,
+                        "https://medium.com/swlh/react-app-deployment-to-vps-cloud-server-2de4387f59f4"
+                    )}
                 </ul>
             </div>
         </div>

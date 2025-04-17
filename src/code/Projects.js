@@ -9,6 +9,27 @@ function Projects() {
             <div class="playspace" id="right">
                 <ul class="list">
                     {ListEntry(
+                        "Personal Portfolio Website",
+                        null,
+                        <>
+                        <p>
+                            This very website is one developed entirely by hand using the React framework. It is hosted on a 
+                            Virtual Private Server using Nginx, however those files/configurations will not be visible on the 
+                            Github page.
+                        </p>
+                        <p>
+                            As a passion project after completing university, this website seeks to showcase not only projects
+                            I have worked on, but also my ability to create a functional website from scratch using very little
+                            outside tools.
+                        </p>
+                        <p>
+                            Using the React framework, CSS made from the ground up, and HTML, this website acts responsively to
+                            all user actions and acts as a framework which I can expand in the future should I desire.
+                        </p>
+                        </>,
+                        "https://github.com/NashRudiak/portfolioserver"
+                    )}
+                    {ListEntry(
                         "Java Compiler",
                         <ul><li>Will require permission to view code</li></ul>,
                         <>
