@@ -206,12 +206,14 @@ button:active {
 div.projectsBackground {
     background: fixed center url("../media/pexels-photo-276452.webp");
     background-repeat: repeat-x;
+    background-size: cover;
     margin-bottom: -1px;
 }
 
 div.sourcesBackground {
     background: fixed center url("../media/Provincial_Archives.jpg");
     background-repeat: repeat-x;
+    background-size: cover;
 }
 
 /*

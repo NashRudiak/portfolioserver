@@ -11,6 +11,7 @@ div.intro {
     height: 80vh;
     background-image: url("../media/backgroundintro.png");
     background-position: center;
+    background-size: cover;
     /* animation: 200s linear infinite movebackground; */
     grid-template-columns: 10% [imagelocI] 33.75% [captionstartI] 6% [namestartI] 41.5% [nameendI] 8.75% [rightedgeI];
     grid-template-rows: 25% [imagestartI] 5% [namelocI] 20% [captionbox] 15% 30% [imageendI] 10% [finaledgeI];
@@ -21,7 +22,7 @@ div.graduate {
     width: 100%;
     height: 70vh;
     background-image: url("../media/guelphbackground.JPG");
-    background-size: 2000px auto;
+    background-size: cover;
     background-position: center;
     /* animation: 200s linear infinite backgroundgrad; */
     grid-template-columns: [titleleftG] 50% [descleftG] 10% [titlerightG] 40% [descrightG];
@@ -31,7 +32,8 @@ div.graduate {
 div.projectoverview {
     width: 100%;
     height: 70vh;
-    background-color: black;
+    background-image: url("../media/projectBackground.jpeg");
+    background-size: cover;
     grid-template-columns: [linkboxleftP] 45% [linkboxrightP] 10% [listboxleftP] 45% [listboxrightP];
     grid-template-rows: 10% [boxtopP] 80% [boxbottomP] 10%;
 }

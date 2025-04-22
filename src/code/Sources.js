@@ -4,6 +4,7 @@ import spacebackground from "../media/backgroundintro.png";
 import guelphbackground from "../media/guelphbackground.JPG";
 import codebackground from "../media/pexels-photo-276452.webp";
 import provarchive from "../media/Provincial_Archives.jpg";
+import projectbackground from "../media/projectBackground.jpeg";
 
 function Sources() {
     return (
@@ -103,8 +104,8 @@ function Sources() {
                         provarchive,
                         "Provincial Archives of Hämeenlinna by Htm"
                     )}
-                    {(
-                        "",
+                    {ListEntry(
+                        "Hosting a VPS server",
                         null,
                         <>
                         <p>
@@ -117,6 +118,25 @@ function Sources() {
                         </p>
                         </>,
                         "https://medium.com/swlh/react-app-deployment-to-vps-cloud-server-2de4387f59f4"
+                    )}
+                    {ListEntry(
+                        "Explore Background",
+                        null,
+                        <>
+                        <p>
+                            For the background of the project I needed something that associated with code. 
+                            I ended up finding this following image on Rawpixel which was what I wanted.
+                        </p>
+                        <a href="https://www.rawpixel.com/image/5941864">https://www.rawpixel.com/image/5941864</a>
+                        <p>
+                            However, on closer inspection I found multiple different sites hosting the image and no author 
+                            attributed, not even an AI. The best source I found was on the Rawpixel site it had a origin of
+                            image under the liscense that linked back to pxhere, but still no author.
+                        </p>
+                        </>,
+                        "https://pxhere.com/en/photo/918274#google_vignette",
+                        projectbackground,
+                        "Macbook coding by Rawpixel"
                     )}
                 </ul>
             </div>
