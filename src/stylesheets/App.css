@@ -61,14 +61,14 @@ div.textbox {
 }
 
 .titlefont {
-    font-family: 'Copperplate', cursive;
+    font-family: 'Copperplate', 'Copperplate Gothic', cursive;
     font-variant: small-caps;
     font-weight: lighter;
 }
 
 .titlebox {
     /* while I could use a preprocessor, I am not sure how it would work */
-    font-family: 'Copperplate', cursive;
+    font-family: 'Copperplate', 'Copperplate Gothic', cursive;
     font-variant: small-caps;
     font-weight: lighter;
     background-color: var(--backEmph);
