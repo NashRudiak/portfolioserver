@@ -11,9 +11,10 @@ footer {
     align-items: center;
     justify-content: flex-start;
     column-gap: 10vw;
-    height: max(20vh, 10em);
-    width: 100vw;
+    /*height: max(20vh, 10em);*/
+    width: auto;
     z-index: 98;
+    flex-wrap: wrap;
 }
 
 footer h1 {

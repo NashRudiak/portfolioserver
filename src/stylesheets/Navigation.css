@@ -4,7 +4,7 @@ header {
     display: flex;
     position: sticky;
     top: 0;
-    width: 100%;
+    width: auto;
     z-index: 100000;
     background-color: var(--backReg);
 }

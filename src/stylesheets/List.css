@@ -58,7 +58,7 @@ ul.list li div.content {
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 1vh 2vw;
-    width: 90%;
+    width: 80vw;
 }
 
 ul.list li img {

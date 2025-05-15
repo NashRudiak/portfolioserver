@@ -21,10 +21,15 @@
 div {
     margin: 0;
     padding: 0;
+    word-wrap: wrap;
+}
+
+div.app {
+    width: auto;
 }
 
 div.section {
-    width: 100vw;
+    width: auto;
     display: grid;
     gap: 0px 0px;
     grid-template-columns: [gridstart] 5% [leftedge] auto [rightedge] 5% [gridend];
@@ -33,7 +38,7 @@ div.section {
 }
 
 div.sectionSpan {
-    width: 100vw;
+    width: auto;
     height: auto;
     display: grid;
     gap: 0px 0px;
@@ -122,7 +127,7 @@ div.playspace#right {
 
 /* Covers the section that separates boxes */
 div.fillbox {
-    width: 100vw;
+    width: auto;
     height: 10vh;
     background-color: var(--backReg);
 }

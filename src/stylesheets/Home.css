@@ -31,7 +31,8 @@ div.graduate {
 
 div.projectoverview {
     width: 100%;
-    height: 70vh;
+    min-height: 80vh;
+    height: auto;
     background-image: url("../media/projectBackground.jpeg");
     background-size: cover;
     grid-template-columns: [linkboxleftP] 45% [linkboxrightP] 10% [listboxleftP] 45% [listboxrightP];
@@ -90,7 +91,7 @@ div.projectoverview {
 
 /* The text involved with the titles */
 div img.headshot {
-    max-height: 100%;
+    max-height: 33.75vw;
     height: 100%;
     width: auto;
     grid-column: imagelocI;
@@ -109,6 +110,8 @@ div div.introtitle {
     border-radius: 20px 20px 0px 0px;
     font-size: calc(10px + 4vmin);
     animation: 1.5s ease-out 1s 1 both slideinright;
+    word-wrap: wrap;
+    width: 41.5vw;
 }
 
 div div.captionbox {
@@ -121,6 +124,8 @@ div div.captionbox {
     font-size: calc(12px + 2vmin);
     animation: 1s ease-out 0.5s 1 both slideinright;
     box-shadow: 2px 4px 4px var(--textCol);
+    width: 56.25vw;
+    word-wrap: wrap;
 }
 
 /* --------------------------------
@@ -136,7 +141,8 @@ div div.gradtitle {
     border-radius: 0px 0px 10px 0px;
     font-size: calc(12px + 1vw);
     box-shadow: -2px 10px 40px var(--textShadow);
-    text-wrap: nowrap;
+    text-wrap: wrap;
+    width: 60vw;
 }
 
 div div.graddesc {
@@ -146,6 +152,7 @@ div div.graddesc {
     grid-row-end: descbottomG;
     font-size: calc(5px + 1vw);
     box-shadow: 2px 10px 40px var(--textShadow);
+    width: 45vw;
 }
 
 /* --------------------------------
@@ -188,12 +195,14 @@ div div.projectbox {
     grid-row-start: boxtopP;
     grid-row-end: boxbottomP;
     padding: 0px;
+    width: 45vw;
 }
 
 div div.projectbox ul {
     display: flex;
     flex-direction: column;
     list-style: none;
+    height: auto;
     padding: 0px;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -204,7 +213,8 @@ div div.projectbox ul {
 div div.projectbox ul li {
     background-color: var(--backEmph);
     width: 100%;
-    height: 12vh;
+    min-height: 12vh;
+    height: auto;
     border-radius: 20px 0px 0px 20px;
     box-shadow: 5px 2px 20px var(--textCol);
     display: flex;
