@@ -10,6 +10,12 @@
     --textShadow: #a5a5a5;
 }
 
+@font-face {
+    font-family: "NewYork";
+    src: local("NewYork"),
+        url(./fonts/NewYork\ PERSONAL\ USE.otf) format("opentype");
+}
+
 /* Any elements unseen should be made invisible before being seen
  * 1px by 1px as 0px would refuse to render */
 .hidden {
@@ -66,16 +72,16 @@ div.textbox {
 }
 
 .titlefont {
-    font-family: 'Copperplate', 'Copperplate Gothic', cursive;
+    font-family: 'NewYork', 'Copperplate', 'Copperplate Gothic', cursive;
     font-variant: small-caps;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .titlebox {
     /* while I could use a preprocessor, I am not sure how it would work */
-    font-family: 'Copperplate', 'Copperplate Gothic', cursive;
+    font-family: 'NewYork', 'Copperplate', 'Copperplate Gothic', cursive;
     font-variant: small-caps;
-    font-weight: lighter;
+    font-weight: bolder;
     background-color: var(--backEmph);
     text-shadow: 2px 2px 2px var(--textShadow);
     font-size: calc(10px + 4vmin);

@@ -138,6 +138,20 @@ function Sources() {
                         projectbackground,
                         "Macbook coding by Rawpixel"
                     )}
+                    {ListEntry(
+                        "New York (Title Font)",
+                        null,
+                        <>
+                        <p>
+                            For the font used for the various headers and titles, I ended up settling on a font by Artem Nevsky 
+                            called "New York". It is an incredibly good font that is both fancy yet typeface readable.
+                        </p>
+                        <p>
+                            All credit goes to the author and this website is for my own personal use rather than a commercial product.
+                        </p>
+                        </>,
+                        "https://www.dafont.com/newyork.font"
+                    )}
                 </ul>
             </div>
         </div>

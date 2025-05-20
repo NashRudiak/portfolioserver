@@ -150,7 +150,7 @@ div div.graddesc {
     grid-column-end: descrightG;
     grid-row-start: desctopG;
     grid-row-end: descbottomG;
-    font-size: calc(5px + 1vw);
+    font-size: calc(7px + 1vw);
     box-shadow: 2px 10px 40px var(--textShadow);
     width: 45vw;
 }
@@ -218,6 +218,7 @@ div div.projectbox ul li {
     border-radius: 20px 0px 0px 20px;
     box-shadow: 5px 2px 20px var(--textCol);
     display: flex;
+    font-size: calc(7px + 1vw);
     justify-content: left;
     align-items: center;
 }

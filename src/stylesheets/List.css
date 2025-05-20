@@ -79,6 +79,7 @@ ul.list li div.textcontent {
 }
 
 /* For fonts, I ended up finding out width was better for scaling then height*/
+/* Afterwards I learned about em, however I don */
 ul.list li h2  {
     width: 100%;
     font-size: calc(10px + 2vw);
@@ -100,7 +101,7 @@ ul.list li h3 {
 
 ul.list li div.content p {
     text-wrap: pretty;
-    font-size: calc(5px + 1vw);
+    font-size: calc(6px + 1vw);
     margin: 0px;
     margin-top: 1vh;
     margin-bottom: 1vh;
